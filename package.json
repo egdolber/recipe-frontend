@@ -1,0 +1,31 @@
+{
+  "name": "Recipe-frontend",
+  "version": "1.0.0",
+  "description": "Frontend (UI) for the Recipe project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:egdolber/recipe-frontend.git"
+  },
+  "keywords": [
+    "Recipe"
+  ],
+  "author": "Ed Dolber-Smith",
+  "license": "MIT",
+  "homepage": "https://github.com/egdolber/recipe-frontend",
+  "devDependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "concurrently": "^8.2.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.1",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.2"
+  }
+}

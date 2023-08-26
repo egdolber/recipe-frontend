@@ -1,0 +1,17 @@
+{
+  "arrowParens": "always",
+  "bracketSameLine": true,
+  "bracketSpacing": true,
+  "semi": true,
+  "singleQuote": true,
+  "tabwidth": 2,
+  "useTabs": false,
+  "overrides": [
+    {
+      "files": ".ts",
+      "options": {
+        "semi": false
+      }
+    }
+  ]
+}
