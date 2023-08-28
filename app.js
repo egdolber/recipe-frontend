@@ -15,12 +15,12 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-// app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // routes defintions
 app.get('/', (req, res) => {
   // res.status(200).send('Hello World!');
-  res.render('index', { Title: 'Home' });
+  res.render('index', { Title: 'Hello World!' });
 });
 
 // server activation
