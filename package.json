@@ -2,10 +2,10 @@
   "name": "recipe-frontend",
   "version": "1.0.0",
   "description": "Frontend (UI) for the Recipe project",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "nodemon ./app.js",
+    "client": "nodemon ./index.js",
     "sync": "browser-sync start --config bs-config.js",
     "preview": "concurrently --kill-others \"npm run client\" \"npm run sync\""
   },

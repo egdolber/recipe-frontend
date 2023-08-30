@@ -4,6 +4,6 @@ module.exports = {
   ignore: ['node_modules'],
   reloadDelay: 10,
   ui: false,
-  notify: false,
+  notify: true,
   port: 3001,
 };
