@@ -17,9 +17,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-// routes defintions
+// routes definitions
 app.get('/', (req, res) => {
-  // res.status(200).send('Hello World!');
   res.render('index', { Title: 'Hello World!' });
 });
 

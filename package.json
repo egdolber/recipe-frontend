@@ -5,7 +5,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "nodemon ./app.js"
+    "client": "nodemon ./app.js",
+    "sync": "browser-sync start --config bs-config.js",
+    "preview": "concurrently --kill-others \"npm run client\" \"npm run sync\""
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   "homepage": "https://github.com/egdolber/recipe-frontend",
   "devDependencies": {
     "bcryptjs": "^2.4.3",
+    "browser-sync": "^2.29.3",
     "colors": "^1.4.0",
     "concurrently": "^8.2.1",
     "dotenv": "^16.3.1",
